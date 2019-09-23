@@ -1,0 +1,36 @@
+{
+  "name": "predictable",
+  "version": "0.0.1",
+  "description": "Predictable objects with consistent keys and default values",
+  "main": "lib/Predictable.js",
+  "scripts": {
+    "test": "jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaocarmo/predictable.git"
+  },
+  "keywords": [
+    "predictable",
+    "object",
+    "javascript",
+    "js",
+    "structure",
+    "consistent",
+    "data",
+    "variables",
+    "const"
+  ],
+  "author": "Joao Carmo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaocarmo/predictable/issues"
+  },
+  "homepage": "https://github.com/joaocarmo/predictable#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0"
+  }
+}
