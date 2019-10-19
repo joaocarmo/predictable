@@ -1,9 +1,14 @@
 import Predictable from '..'
 
 const predictableObj = new Predictable({
-  firstName: 'Johh',
-  lastName: 'Doe',
-  age: 42,
+  firstName: 'Homer',
+  lastName: 'Simpson',
 })
 
-console.log(`Hello ! My name is ${predictableObj.firstName} ${predictableObj.lastName} and I'm ${predictableObj.age} years old.`)
+predictableObj.set('age', 42)
+
+const firstName = predictableObj.get('firstName')
+const lastName = predictableObj.get('lastName')
+const middleName = predictableObj.get('middleName', 'J.')
+
+console.log(`Hello ! My name is ${firstName} ${middleName} ${lastName} and I'm ${predictableObj.age} years old.`)
