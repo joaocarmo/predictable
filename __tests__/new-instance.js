@@ -1,3 +1,4 @@
+/* eslint-disable no-console, no-restricted-syntax */
 import Predictable from '..'
 
 const predictableObj = new Predictable({
@@ -18,3 +19,7 @@ console.log(predictableObj.toPlainObject({ types: true }))
 console.log(predictableObj.toPlainObject())
 
 console.log(predictableObj.stringify())
+
+for (const element of predictableObj) {
+  console.log(element, predictableObj[element])
+}
